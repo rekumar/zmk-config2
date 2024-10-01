@@ -94,7 +94,7 @@
    &none    &none    &none    &none    &none    &kp LS(LC(N3))      &none    &none    &none    &none    &none    &none
    &none    &none    &none    &none    &none    &none               &none    &none    &none    &none    &none    &none
                               &none    &none    &none               &none    &none    &none         
-                    >    
+                    >;
                 };
         };
 };
