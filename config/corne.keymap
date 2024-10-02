@@ -36,7 +36,7 @@
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 tri_layer {
-                    if-layers = <1 2>;
+                    if-layers = <2 3>;
                     then-layer = <5>;
                 };
         };
@@ -74,7 +74,6 @@
                      &kp ESC    &hm LSFT SPC &lt LOWER TAB            &lt RAISE BKSP &hm RSFT RET &lt SYS K_APP
                         >;
                 };
-
                 colemak_layer {
                         bindings = <
    &none  &kp Q      &kp W      &kp F       &kp P      &kp G          &kp J   &kp L      &kp U         &kp Y      &kp SCLN      &none 
