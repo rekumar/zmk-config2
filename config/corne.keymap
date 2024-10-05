@@ -28,7 +28,7 @@
                 #binding-cells = <2>;
                 flavor = "tap-preferred";
                 tapping-term-ms = <200>;
-                quick-tap-ms = <200>;
+                quick-tap-ms = <0>;
                 bindings = <&kp>, <&kp>;
             };
         };
@@ -94,10 +94,10 @@
                 
                 raise_layer {
                         bindings = <
-   &none  &kp BSLH   &kp EXCL   &kp TILDE   &kp AMPS   &kp GRAVE      &kp HOME &kp PG_UP &kp PG_DN     &kp END    &trans        &none
-   &none  &kp FSLH   &kp MINUS  &kp EQL     &kp PLUS   &kp STAR       &kp LEFT &kp DOWN  &kp UP        &kp RIGHT  &trans        &none
-   &none  &kp PRCT   &kp LT     &kp PIPE    &kp GT     &kp CRRT       &trans   &trans    &trans        &kp LC(MINUS) &kp LC(EQL) &none
-                     &trans     &trans      &lt LOWER TAB             &trans   &trans    &trans
+   &none  &kp BSLH        &kp EXCL    &kp TILDE   &kp AMPS   &kp GRAVE      &kp HOME  &kp PG_UP  &kp PG_DN     &kp END        &trans     &none
+   &none  &hm LGUI FSLH   &kp MINUS   &hm LCTRL EQL &kp PLUS &kp STAR       &kp LEFT  &kp DOWN   &kp UP        &kp RIGHT      &trans     &none
+   &none  &hm LALT PRCT   &kp LT      &kp PIPE    &kp GT     &kp CRRT       &trans    &trans     &trans        &kp LC(MINUS)  &kp LC(EQL) &none
+                          &trans      &trans      &lt LOWER TAB             &trans    &trans     &trans
                         >;
                 };
 
