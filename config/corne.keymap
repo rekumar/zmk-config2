@@ -72,7 +72,7 @@
    &none  &hm LALT Z &kp X      &kp C       &kp V      &kp B          &kp N   &kp M      &kp CMMA      &kp DOT    &hm RALT FSLH &none
                      &kp ESC    &hm LSFT SPC &lt LOWER TAB            &lt RAISE BKSP &hm RSFT RET &lt SYS K_APP
                         >;
-                };q
+                };
                 colemak_layer {
                         bindings = <
    &none  &kp Q      &kp W      &kp F       &kp P      &kp G          &kp J   &kp L      &kp U         &kp Y      &kp SCLN      &none 
