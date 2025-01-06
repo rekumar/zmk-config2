@@ -1,0 +1,22 @@
+
+if SHIELD_REKDACTYL_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "REKDactyl"
+
+endif
+
+
+if SHIELD_REKDACTYL2_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "REKDactyl Right"
+
+endif
+
+if SHIELD_REKDACTYL_LEFT || SHIELD_REKDACTYL_RIGHT
+
+config ZMK_SPLIT
+	default y
+ 
+endif
