@@ -98,10 +98,10 @@
 
                 tri_layer {
                         bindings = <
-   &F19          &F20          &F21          &F24          &LS(LC(N4))        &none          &kp LS(F19)   &kp LS(F20)   &kp LS(F21)   &kp LS(F24)       
-   &F16          &F17          &F18          &F23          &LS(LC(N3))        &none          &kp LS(F16)   &kp LS(F17)   &kp LS(F18)   &kp LS(F23)       
-   &F13          &F14          &F15          &F22          &none              &none          &kp LS(F13)   &kp LS(F14)   &kp LS(F15)   &kp LS(F22)       
-                 &none         &none         &none         &none              &none          &none         &none         &none         &none
+   &kp F19       &kp F20       &kp F21       &kp F24       &kp LS(LC(N4))     &none         &kp LS(F19)   &kp LS(F20)   &kp LS(F21)   &kp LS(F24)
+   &kp F16       &kp F17       &kp F18       &kp F23       &kp LS(LC(N3))     &none         &kp LS(F16)   &kp LS(F17)   &kp LS(F18)   &kp LS(F23)
+   &kp F13       &kp F14       &kp F15       &kp F22       &none              &none         &kp LS(F13)   &kp LS(F14)   &kp LS(F15)   &kp LS(F22)
+                 &none         &none         &none         &none              &none         &none         &none         &none
                         >;
                 };
             };
