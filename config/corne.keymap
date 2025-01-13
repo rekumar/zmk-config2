@@ -77,7 +77,7 @@
                 colemak_layer {
                         bindings = <
    &none   &kp Q       &kp W       &kp F        &kp P       &kp G           &kp J         &kp L       &kp U          &kp Y       &kp SCLN       &none 
-   &none   &hm LCTRL A &kp R      &hm LGUI S    &kp T       &kp D           &kp H         &kp N       &hm RGUI E     &kp I       &hm RCTRL O     &none 
+   &none   &hm LCTRL A &kp R       &hm LGUI S    &kp T       &kp D           &kp H         &kp N       &hm RGUI E     &kp I       &hm RCTRL O     &none 
    &none   &hm LALT Z  &kp X       &kp C        &kp V       &kp B           &kp K         &kp M       &kp CMMA       &kp DOT     &hm RALT FSLH  &none 
                        &lt SAGE ESC  &hm LSFT SPC &lt LOWER TAB             &lt RAISE BKSP &hm RSFT RET &mo SYS
                         >;
@@ -97,7 +97,7 @@
    &none  &kp BSLH        &kp EXCL    &kp TILDE   &kp AMPS   &kp GRAVE      &kp HOME  &kp PG_UP  &kp PG_DN     &kp END        &trans     &none
    &none  &hm LGUI FSLH   &kp MINUS   &hm LCTRL EQL &kp PLUS &kp STAR       &kp LEFT  &kp DOWN   &kp UP        &kp RIGHT      &trans     &none
    &none  &hm LALT PRCT   &kp LT      &kp PIPE    &kp GT     &kp CRRT       &trans    &trans     &trans        &kp LC(MINUS)  &kp LC(EQL) &none
-                          &trans      &trans      &lt LOWER TAB             &trans    &trans     &trans
+                          &trans      &trans      &lt LOWER LG(GRAVE)             &trans    &trans     &trans
                         >;
                 };
 
