@@ -19,6 +19,7 @@
 #define RAISE 3
 #define SYS 4
 #define TRI 5
+#define SAGE 6
 / {
         behaviors {
             hm: homerow_mods {
@@ -70,21 +71,21 @@
    &none   &kp Q        &kp W       &kp E        &kp R       &kp T           &kp Y         &kp U       &kp I          &kp O       &kp P          &none
    &none   &hm LCTRL A  &kp S       &hm LGUI D  &kp F       &kp G            &kp H         &kp J       &hm RGUI K     &kp L       &hm RCTRL SCLN  &none
    &none   &hm LALT Z   &kp X       &kp C        &kp V       &kp B           &kp N         &kp M       &kp CMMA       &kp DOT     &hm RALT FSLH  &none
-                        &lt TRI ESC  &hm LSFT SPC &lt LOWER TAB               &lt RAISE BKSP &hm RSFT RET &lt SYS K_APP
+                        &lt SAGE ESC  &hm LSFT SPC &lt LOWER TAB               &lt RAISE BKSP &hm RSFT RET &lt SYS K_APP
                         >;
                 };
                 colemak_layer {
                         bindings = <
    &none   &kp Q       &kp W       &kp F        &kp P       &kp G           &kp J         &kp L       &kp U          &kp Y       &kp SCLN       &none 
-   &none   &hm LCTRL A  &kp R       &hm LGUI S  &kp T       &kp D           &kp H         &kp N       &hm RGUI E    &kp I       &hm RCTRL O     &none 
+   &none   &hm LCTRL A &kp R      &hm LGUI S    &kp T       &kp D           &kp H         &kp N       &hm RGUI E     &kp I       &hm RCTRL O     &none 
    &none   &hm LALT Z  &kp X       &kp C        &kp V       &kp B           &kp K         &kp M       &kp CMMA       &kp DOT     &hm RALT FSLH  &none 
-                       &lt TRI ESC  &hm LSFT SPC &lt LOWER TAB             &lt RAISE BKSP &hm RSFT RET &mo SYS
+                       &lt SAGE ESC  &hm LSFT SPC &lt LOWER TAB             &lt RAISE BKSP &hm RSFT RET &mo SYS
                         >;
                 };
 
                 lower_layer {
                         bindings = <
-   &none  &kp F24    &kp DQT    &kp LPAR    &kp RPAR   &kp AT         &trans  &kp N7     &kp N8        &kp N9     &trans        &none  
+   &none  &kp F19    &kp DQT    &kp LPAR    &kp RPAR   &kp AT         &trans  &kp N7     &kp N8        &kp N9     &trans        &none  
    &none  &kp LS(P)  &kp SQT    &kp LBKT    &kp RBKT   &kp UNDER      &kp STAR &kp N4    &kp N5        &kp N6     &kp RET       &none  
    &none  &kp QMARK  &kp DLLR   &kp LBRC    &kp RBRC   &kp HASH       &kp FSLH &kp N1    &kp N2        &kp N3     &kp RET       &none  
                      &trans     &trans      &trans                    &lt RAISE DEL  &kp N0    &kp DOT
@@ -115,6 +116,15 @@
    &none  &kp F16  &kp F17  &kp F18  &kp F23  &kp LS(LC(N3))  &none  &kp LS(F16)  &kp LS(F17)  &kp LS(F18)  &kp LS(F23)  &none
    &none  &kp F13  &kp F14  &kp F15  &kp F22  &none           &none  &kp LS(F13)  &kp LS(F14)  &kp LS(F15)  &kp LS(F22)  &none
                    &none    &none    &none                     &none  &none        &none
+                        >;
+                };
+
+                sage_layer {
+                        bindings = <
+   &none  &kp F19  &kp F20    &kp F21  &kp F24  &kp LS(LC(N4))  &none  &kp LS(F19)  &kp LS(F20)  &kp LS(F21)  &kp LS(F24)  &none
+   &none  &kp BSKP &kp F17    &kp F18  &kp F23  &kp LS(LC(N3))  &none  &kp LS(F16)  &kp LS(F17)  &kp LS(F18)  &kp LS(F23)  &none
+   &none  &kp RET  &kp LGUI(Z)&kp F15  &kp F22  &none           &none  &kp LS(F13)  &kp LS(F14)  &kp LS(F15)  &kp LS(F22)  &none
+                   &trans      &none    &none                     &none  &none        &none
                         >;
                 };
         };
