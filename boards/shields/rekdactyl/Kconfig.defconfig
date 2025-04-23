@@ -21,5 +21,12 @@ if SHIELD_REKDACTYL_LEFT || SHIELD_REKDACTYL_RIGHT
 
 config ZMK_SPLIT
 	default y
- 
+
+config ZMK_IDLE_SLEEP_TIMEOUT
+	int "Milliseconds of inactivity before deep sleep. 15 minutes."
+	default 900000
+
+config ZMK_SLEEP
+	default y
+
 endif
