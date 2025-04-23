@@ -1,11 +1,19 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <zephyr/dt-bindings/pinctrl/nrf-pinctrl.h>
+
 &spi1 {
 	compatible = "nordic,nrf-spim";
 	/* Cannot be used together with i2c0. */
 	status = "okay";
-	mosi-pin = <6>;
-	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-	sck-pin = <5>;
-	miso-pin = <7>;
+	// Use pinctrl instead of individual pin properties
+	pinctrl-0 = <&spi1_default>;
+	pinctrl-names = "default";
+	// Remove mosi-pin, sck-pin, miso-pin definitions
 
 	led_strip: ws2812@0 {
 		compatible = "worldsemi,ws2812-spi";
@@ -19,6 +27,30 @@
 		chain-length = <6>; /* There are per-key RGB, but the first 6 are underglow */
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
+		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+	};
+};
+
+// Define the pinctrl node for spi1 pins
+&pinctrl {
+	spi1_default: spi1_default {
+		group1 {
+			// Assign P0.05 to SCK, P0.06 to MOSI, P0.07 to MISO
+			psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
+					<NRF_PSEL(SPIM_MOSI, 0, 6)>,
+					<NRF_PSEL(SPIM_MISO, 0, 7)>;
+		};
+	};
+
+	// Define sleep state if needed, otherwise SPI might prevent deep sleep.
+	// If you don't need deep sleep or encounter issues, you can remove spi1_sleep.
+	spi1_sleep: spi1_sleep {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
+					<NRF_PSEL(SPIM_MOSI, 0, 6)>,
+					<NRF_PSEL(SPIM_MISO, 0, 7)>;
+			low-power-enable;
+		};
 	};
 };
 
