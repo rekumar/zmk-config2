@@ -7,7 +7,7 @@ config ZMK_KEYBOARD_NAME
 endif
 
 
-if SHIELD_REKDACTYL2_RIGHT
+if SHIELD_REKDACTYL_RIGHT
 
 config ZMK_KEYBOARD_NAME
 	default "REKDactyl Right"
