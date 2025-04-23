@@ -87,7 +87,7 @@
    &hm LALT PRCT &kp LT     &kp PIPE     &kp GT        &kp CRRT         &trans        &trans     &trans         &trans     &trans
                  &trans     &trans                                                      &kp LC(MINUS) &kp LC(EQL)
                                          &trans         &trans
-                           &trans        &trans         &trans           &trans        &trans     &trans
+                           &trans        &lt LOWER LG(GRAVE)         &trans           &trans        &trans     &trans
                                          &trans         &trans
                         >;
                 };
