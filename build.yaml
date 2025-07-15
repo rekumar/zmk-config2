@@ -26,9 +26,15 @@ include:
     # snippet: zmk-usb-logging
   # - board: nice_nano
   #   shield: settings_reset
+  # - board: nice_nano
+  #   shield: rekdactyl_left
+  #   # snippet: zmk-usb-logging
+  # - board: nice_nano
+  #   shield: rekdactyl_right
+  #   # snippet: zmk-usb-logging
   - board: nice_nano
-    shield: rekdactyl_left
+    shield: rekdactyl2_left
     # snippet: zmk-usb-logging
   - board: nice_nano
-    shield: rekdactyl_right
+    shield: rekdactyl2_right
     # snippet: zmk-usb-logging
