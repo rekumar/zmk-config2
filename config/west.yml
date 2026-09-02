@@ -4,10 +4,26 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
+    - name: beekeeb
+      url-base: https://github.com/beekeeb
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3
       import: app/west.yml
+    # Toucan2: RGB status LED widget on the XIAO's onboard LED
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: v0.3
+    # Toucan2: Azoteq TPS43 trackpad driver (right half)
+    - name: zmk_driver_azoteq
+      remote: beekeeb
+      revision: main
+    # Toucan2: pinch-to-zoom input processor for the trackpad
+    - name: zmk-input-zoom
+      remote: beekeeb
+      revision: main
   self:
     path: config
